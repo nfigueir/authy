@@ -28,7 +28,7 @@ type deviceRegistration struct {
 }
 
 func main() {
-	savePtr := flag.String("save", "", "Save encrypted tokens to this JSON file")
+	savePtr := flag.String("save", "./otp.json", "Save encrypted tokens to this JSON file")
 	loadPtr := flag.String("load", "", "Load tokens from this JSON file instead of the server")
 	flag.Parse()
 
